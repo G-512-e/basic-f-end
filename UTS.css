@@ -1,0 +1,566 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{font-family: 'Poppins', sans-serif;
+
+}
+
+h1{font-size: 2.5rem;
+   font-weight: 700;
+   color:  #008B8B;
+
+}
+
+span {font-size: .9rem;
+     color: darkgoldenrod;
+
+}
+
+h6 {font-size: 1.1rem;
+     color: rgb(24, 24, 49);
+
+}
+
+/*-----------------------------------------------navigation----------------------------------------*/
+
+nav {display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 1vw 8vw;
+     align-items: center;
+     box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+     position: absolute;
+     width: 100%;
+     background-color: #F5F5F5;
+
+}
+
+nav img {width: 150px;
+         cursor: pointer;
+
+}
+
+nav .navigation ul {display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+}
+
+nav .navigation ul li {list-style: none;
+                       margin-left: 30px;
+                       
+
+
+}
+
+nav .navigation ul li a {text-decoration: none;
+                         color: #3CB371;
+                         font-size: 16px;
+                         font-weight: 500;
+
+
+}
+
+nav .navigation ul li a:hover {color: #9932CC;
+
+
+}
+
+
+
+#home {background-image: linear-gradient(rgba(9,5,54, 0.3),rgba(5,4,46,0.7)),url("images/gmbr1.png");
+       width: 100%;
+       height: 100vh;
+       background-size: cover;
+       background-position: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       padding-top: 40px;
+}
+
+#home h2 {color: #FDF5E6;
+          font-size: 2.2remm;
+          letter-spacing: 1px;
+
+
+}
+
+#home p {color: #DDA0DD;
+          font-size: 0.9remm;
+          width: 50%;
+          line-height: 25px;
+}
+
+
+#home .btn {margin-top: 30px;
+
+}
+
+
+#home a{text-decoration: none;
+        font-size: 0.9rem;
+        padding: 13px 35px;
+        background-color: #fff;
+        font-weight: 600;
+        border-radius: 20px;
+}
+
+#home a.blue {
+     color: #fff;
+     background: rgb(21, 21, 100) ;
+}
+
+#home a.blue:hover {
+     color: #rgb(21, 21, 100);
+     background: #D2691E;
+}
+
+/*features*/
+
+#features {
+     padding: 5vw 8vw 0 8vw;
+     text-align: center;
+     color: black;
+
+}
+
+
+#features .fea-box {
+     background: #DDA0DD;
+     text-align: start;
+     border-radius: 5px;
+
+}
+#features .fea-box i {
+     font-size: 2.3rem;
+     color: #FDF5E6;
+     margin-left: 10px;
+     margin-top: 10px;
+
+}
+
+#features .fea-box h3 {
+     font-size: 1.2 rem;
+     font-weight: 600;
+     color: rgb(46, 46, 59);
+     padding: 13px 0 7px 0;
+     margin-left: 10px;
+     margin-top: 10px;
+}
+
+#features .fea-box p {
+     font-size: 1.2 rem;
+     font-weight: 400;
+     color: rgb(70, 70, 87);
+     margin-left: 10px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+
+
+#features .fea-base {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+     grid-gap: 1rem;
+     margin-top: 50px;
+
+}
+
+.search-box {
+     position: absolute;
+     bottom: 20%;
+     right: 41%;
+     transform: translate(-50);
+     height: 40px;
+     background: whitesmoke;
+     border-radius: 40px;
+     padding: 10px;
+     background: black;
+
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+
+}
+
+
+
+
+
+.search-txt {
+     border: none;
+     background: none;
+     outline: none;
+     float: left;
+     padding: 0;
+     color: white;
+     font-size: 16px;
+     width: 240px;
+
+
+}
+
+
+.search-box:hover > .search-txt {
+     width: 240px;
+     padding: 0 6px;
+
+
+}
+
+
+.search-box:hover > .search-btn {
+     background: black;
+     
+
+
+}
+
+/*------------------------------------------------------------TRAVEL---------------------------------------------------*/
+
+#course {
+
+     padding: 8vw 8vw 0 8vw;
+     text-align: center;
+}
+
+
+/*/
+#course .course-box {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+     grid-gap: 1rem;
+     margin-top: 50px;
+
+}
+/*/
+#course .courses {
+     text-align: start;
+     background: #F9F9FF;
+     height:100%;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     margin-top: 50px;
+     position: relative;
+     margin-top: 50px;
+     margin-bottom: 90px;
+     
+}
+
+#course .courses img {
+     width: 100%;
+     height: 80%;
+     background-size:cover;
+     background-position: center;
+     margin-top: 20px;
+}
+
+
+ #course .courses .details {
+     padding: 15px 15px 0 15px;
+
+ }
+
+ #course .courses .details i {
+     color: yellow;
+     font-size: .9rem;
+ }
+ #course .courses .cost {
+     background: #DA70D6;
+     color: #fff;
+     line-height: 70px;
+     width: 70px;
+     height: 70px;
+     text-align: center;
+     border-radius: 50%;
+     position: absolute;
+     right: 15px;
+     display: grid;
+ }
+
+
+.benner {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     margin-bottom: 100px;
+}
+
+.benner video {
+     position: absolute;
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     margin-top: 100px;
+     
+
+}
+
+.benner h1 {
+     font-size: 40px;
+     position: absolute;
+     z-index: 2;
+     color: #BA55D3;
+     margin-top: 50px;
+}
+
+
+.maps {
+     margin-top: 10px;
+
+}
+
+
+
+
+/*-----------------------------------------------CARD----------------------------------------------*/
+.card {
+     display: grid;
+     grid-template-columns: 300px;
+     grid-template-rows: 210px 210px 180px;
+     grid-template-areas: "image" "text" "stats";
+     font-family: roboto;
+     border-radius: 18px;
+     background: white;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+     text-align: center;
+     width: 300px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     margin-left: 560px;
+
+     transition: 0.9s ease;
+     cursor: pointer;
+}
+
+.card-image {
+     grid-area: image;
+     border-top-right-radius: 15px;
+     border-top-left-radius: 15px;
+     background-size: cover;
+     background-image: url(images/indah.jpeg);
+
+}
+
+.card-text {
+     grid-area: text;
+     margin: 25px;
+}
+
+.card-text .date {
+     color: rgb(255, 7, 110);
+     font-size: 13px;
+
+}
+
+
+.card-text p {
+     color: grey;
+     font-size: 15px;
+     font-weight: 300;
+
+}
+
+.card-text h2 {
+     margin-top: 10px;
+     font-size: 28px;
+     margin-bottom: 10px;
+}
+
+.card-stats {
+     grid-area: stats;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+     border-bottom-left-radius: 15px;
+     border-top-right-radius: 15px;  
+     margin-top: 90px;
+}
+
+/*-----------------------------------------------CARD1----------------------------------------------*/
+
+.card1 {
+     display: grid;
+     grid-template-columns: 300px;
+     grid-template-rows: 210px 210px 180px;
+     grid-template-areas: "image1" "text1" "stats1";
+     font-family: roboto;
+     margin-top: 25px;
+     border-radius: 18px;
+     background: white;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+     text-align: center;
+     width: 300px;
+     margin-left: 1050px;
+     margin-top: -650px;
+     
+
+
+     transition: 0.9s;
+     cursor: pointer;
+}
+
+.card-image1 {
+     grid-area: image1;
+     border-top-right-radius: 15px;
+     border-top-left-radius: 15px;
+     background-size: cover;
+     background: url(images/indah3.jpg);
+     
+
+}
+
+.card-text1 {
+     grid-area: text1;
+     margin: 25px;
+}
+
+.card-text1 .date1 {
+     color: rgb(255, 7, 110);
+     font-size: 13px;
+
+}
+
+
+.card-text1 p {
+     color: grey;
+     font-size: 15px;
+     
+     
+
+}
+
+.card-text1 h2 {
+     margin-top: 10px;
+     font-size: 28px;
+     margin-bottom: 10px;
+}
+
+.card-stats1 {
+     grid-area: stats1;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+     border-bottom-left-radius: 15px;
+     border-top-right-radius: 15px;  
+     margin-top: 90px;
+}
+
+/*-----------------------------------------------CARD2----------------------------------------------*/
+
+.card2 {
+     display: grid;
+     grid-template-columns: 300px;
+     grid-template-rows: 210px 210px 180px;
+     grid-template-areas: "image2" "text2" "stats2";
+     font-family: roboto;
+     border-radius: 18px;
+     background: white;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+     text-align: center;
+     width: 300px;
+     margin-top: -600px;
+     margin-bottom: 50px;
+     margin-left: 50px;
+     margin-right: 90px;
+
+     transition: 0.9s ease;
+     cursor: pointer;
+}
+
+.card-image2 {
+     grid-area: image2;
+     border-top-right-radius: 15px;
+     border-top-left-radius: 15px;
+     background-size: cover;
+     background-image: url(images/indah2.jpg);
+
+}
+
+.card-text2 {
+     grid-area: text2;
+     margin: 25px;
+}
+
+.card-text2 .date2 {
+     color: rgb(255, 7, 110);
+     font-size: 13px;
+
+}
+
+
+.card-text2 p {
+     color: grey;
+     font-size: 15px;
+     font-weight: 300;
+
+}
+
+.card-text2 h2 {
+     margin-top: 10px;
+     font-size: 28px;
+     margin-bottom: 10px;
+}
+
+.card-stats2 {
+     grid-area: stats2;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+     border-bottom-left-radius: 15px;
+     border-top-right-radius: 15px;  
+     margin-top: 90px;
+}
+
+footer {
+     position: relative;
+     bottom: 0px;
+     width: 120%;
+     background:floralwhite ;
+     margin-left: -120px;
+}
+.main-content {
+     display: flex;
+}
+.main-content .box {
+     flex-basis: 50%;
+     padding: 10px 20px;
+}
+.box h2 {
+     font-size: 1.125rem;
+     font-weight: 600;
+     text-transform: uppercase;
+
+}
+.box .content {
+     margin: 20px 0 0 0;
+}
+.left .content .social {
+     margin-top: 20px 0 0 0;
+
+}
+.left-box p {
+     width: 1000px;
+}
+
+.center-box {
+     margin-left: 50px;
+}
+.right-box {
+     margin-left: 50px;
+}
+.social {
+     margin-top: 20px;
+}
